@@ -13,7 +13,9 @@
 		821CAC961D83F052002D9D71 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 821CAC921D83F052002D9D71 /* libz.1.2.5.tbd */; };
 		821CAC971D83F052002D9D71 /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 821CAC931D83F052002D9D71 /* libz.1.tbd */; };
 		821CAC981D83F052002D9D71 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 821CAC941D83F052002D9D71 /* libz.tbd */; };
-		821CAC9A1D83F066002D9D71 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821CAC991D83F066002D9D71 /* libGoogleAnalyticsServices.a */; };
+		82752EE21D848234000717F7 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82752EE11D848234000717F7 /* libGoogleAnalyticsServices.a */; };
+		82752EE51D8483A3000717F7 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 82752EE31D8483A3000717F7 /* libsqlite3.0.tbd */; };
+		82752EE61D8483A3000717F7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 82752EE41D8483A3000717F7 /* libsqlite3.tbd */; };
 		D263FE8217F7659700649769 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D263FE8117F7659700649769 /* Foundation.framework */; };
 		D263FE8417F7659700649769 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D263FE8317F7659700649769 /* CoreGraphics.framework */; };
 		D263FE8617F7659700649769 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D263FE8517F7659700649769 /* UIKit.framework */; };
@@ -54,7 +56,13 @@
 		821CAC921D83F052002D9D71 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		821CAC931D83F052002D9D71 /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
 		821CAC941D83F052002D9D71 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		821CAC991D83F066002D9D71 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = ../GoogleAnalyticsServicesiOS_3.16/libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		82752EDD1D847F8C000717F7 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceFields.h; sourceTree = "<group>"; };
+		82752EDE1D847F8C000717F7 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		82752EDF1D847F8C000717F7 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		82752EE01D847F8C000717F7 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		82752EE11D848234000717F7 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		82752EE31D8483A3000717F7 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		82752EE41D8483A3000717F7 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		D263FE7E17F7659700649769 /* Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D263FE8117F7659700649769 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D263FE8317F7659700649769 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -83,10 +91,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				821CAC9A1D83F066002D9D71 /* libGoogleAnalyticsServices.a in Frameworks */,
+				82752EE51D8483A3000717F7 /* libsqlite3.0.tbd in Frameworks */,
+				82752EE61D8483A3000717F7 /* libsqlite3.tbd in Frameworks */,
 				821CAC951D83F052002D9D71 /* libz.1.1.3.tbd in Frameworks */,
 				821CAC961D83F052002D9D71 /* libz.1.2.5.tbd in Frameworks */,
 				821CAC971D83F052002D9D71 /* libz.1.tbd in Frameworks */,
+				82752EE21D848234000717F7 /* libGoogleAnalyticsServices.a in Frameworks */,
 				821CAC981D83F052002D9D71 /* libz.tbd in Frameworks */,
 				821CAC901D83EFF9002D9D71 /* SystemConfiguration.framework in Frameworks */,
 				821CAC8E1D83EFE4002D9D71 /* CoreData.framework in Frameworks */,
@@ -114,6 +124,10 @@
 			children = (
 				821CAC861D83EFAF002D9D71 /* GAI.h */,
 				821CAC871D83EFAF002D9D71 /* GAIDictionaryBuilder.h */,
+				82752EDD1D847F8C000717F7 /* GAIEcommerceFields.h */,
+				82752EDE1D847F8C000717F7 /* GAIEcommerceProduct.h */,
+				82752EDF1D847F8C000717F7 /* GAIEcommerceProductAction.h */,
+				82752EE01D847F8C000717F7 /* GAIEcommercePromotion.h */,
 				821CAC881D83EFAF002D9D71 /* GAIFields.h */,
 				821CAC891D83EFAF002D9D71 /* GAILogger.h */,
 				821CAC8A1D83EFAF002D9D71 /* GAITrackedViewController.h */,
@@ -144,7 +158,9 @@
 		D263FE8017F7659700649769 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				821CAC991D83F066002D9D71 /* libGoogleAnalyticsServices.a */,
+				82752EE31D8483A3000717F7 /* libsqlite3.0.tbd */,
+				82752EE41D8483A3000717F7 /* libsqlite3.tbd */,
+				82752EE11D848234000717F7 /* libGoogleAnalyticsServices.a */,
 				821CAC911D83F052002D9D71 /* libz.1.1.3.tbd */,
 				821CAC921D83F052002D9D71 /* libz.1.2.5.tbd */,
 				821CAC931D83F052002D9D71 /* libz.1.tbd */,
@@ -433,6 +449,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Clock/Clock-Prefix.pch";
 				INFOPLIST_FILE = "Clock/Clock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.scott-sherwood.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -447,6 +468,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Clock/Clock-Prefix.pch";
 				INFOPLIST_FILE = "Clock/Clock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.scott-sherwood.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

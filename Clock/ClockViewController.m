@@ -21,6 +21,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.screenName = @"Clock";
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

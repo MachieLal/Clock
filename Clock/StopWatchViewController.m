@@ -40,6 +40,14 @@
     }
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker set:kGAIScreenName value:@"Stopwatch"];
+    [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
+}
+
 -(IBAction)startToggle:(id)sender{
     if(self.timer){
         [self stop:sender];

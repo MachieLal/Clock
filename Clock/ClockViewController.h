@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAITrackedViewController.h"
 
-@interface ClockViewController : UIViewController
+@interface ClockViewController : GAITrackedViewController
 
 @end

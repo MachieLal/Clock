@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAIDictionaryBuilder.h"
+
 
 @interface StopWatchViewController : UIViewController
 
