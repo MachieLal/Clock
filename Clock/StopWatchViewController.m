@@ -49,6 +49,8 @@
 }
 
 -(IBAction)startToggle:(id)sender{
+    [self logButtonPress:(UIButton *)sender];
+
     if(self.timer){
         [self stop:sender];
         [self.toggle setTitle:@"Start" forState:UIControlStateNormal];
@@ -60,6 +62,8 @@
 }
 
 -(IBAction)reset:(id)sender{
+    [self logButtonPress:(UIButton *)sender];
+
     [self stop:sender];
     [self.toggle setTitle:@"Start" forState:UIControlStateNormal];
     
@@ -74,7 +78,17 @@
     self.timer = nil;
 }
 
-
+-(void)logButtonPress:(UIButton *)button{
+    
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    
+    [tracker set:kGAIScreenName value:@"Stopwatch"];
+    [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"UX"
+                                                          action:@"touch"
+                                                           label:[button.titleLabel text]
+                                                           value:nil] build]];
+    [tracker set:kGAIScreenName value:nil];
+}
 
 -(void)tick:(NSTimer *)t{
     self.ticks++;
